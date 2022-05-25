@@ -1,0 +1,5 @@
+set ts=2             " <-- tabstop - how many spaces is \t worth
+set sw=2             " <-- shiftwidth - how many spaces is indentation
+set et               " <-- expandtab - Use spaces, never \t values
+set ai               " <-- autoindent - VIM knows where to indent
+set mouse=a          " <-- Enable mouse support
