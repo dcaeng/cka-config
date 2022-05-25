@@ -1,0 +1,12 @@
+alias k='kubectl                                       # <-- Most general and useful shortcut!
+
+alias kd='kubectl delete --force --grace-period=0      # <-- Fast deletion of resources
+
+alias kc="kubectl create"                              # <-- Create a resource
+alias kc-dry='kubectl create --dry-run=client -o yaml  # <-- Create a YAML template of resource
+
+alias kr='kubectl run'                                 # <-- Run/Create a resource (typically pod)
+alias kr-dry='kubectl run --dry-run=client -o yaml     # <-- Create a YAML template of resource
+
+# If kc-dry and kr-dry do not autocomplete, add the following
+export do="dry-run=client -o yaml"                     # <-- Create the YAML tamplate (usage: $do)
